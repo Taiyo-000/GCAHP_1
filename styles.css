@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+/* styles.css */
+
+/* ヘッダーセクションのスタイル */
+header {
+  background-color: #333; /* ヘッダーの背景色を指定 */
+  color: #fff; /* テキストの色を指定 */
+  padding: 20px 0; /* パディングを調整 */
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: #ff6600; /* CTAボタンの背景色を指定 */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.cta-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* categories */
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f0f0f0; /* 背景色を設定 */
+  padding: 20px; /* カテゴリーセクションの内部余白 */
+}
+
+.category {
+  text-align: center;
+  margin: 20px;
+  background-color: #fff; /* カテゴリーの背景色を設定 */
+  padding: 20px; /* カテゴリーの内部余白 */
+  border-radius: 5px; /* カテゴリーの角丸を設定 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を設定 */
+  transition: transform 0.3s ease; /* ホバーエフェクトのアニメーション */
+}
+
+.category a {
+  text-decoration: none;
+  color: #333;
+}
+
+.category h2 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.category img {
+  width: 100px;
+}
+
+.category:hover {
+  transform: scale(1.05); /* ホバーエフェクトで拡大表示 */
+}
+
+/* contact */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #FF6B6B, #6B66FF);
+  padding: 40px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.contact-info, .contact-form {
+  width: 48%;
+}
+
+.contact-info {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form label, .contact-form input, .contact-form textarea {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.contact-form button {
+  background: #FF6B6B;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #6B66FF;
+}
+
+/* footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-info {
+  font-size: 14px;
+}
+
+.site-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-info a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  font-size: 24px;
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.site-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.site-links a:last-child {
+  margin-right: 0;
+}
+
+/* job-listing */
+
+/* styles.css */
+
+.job-listing {
+    max-width: 800px;
+    margin: 0 auto;
+    /* 修正箇所: 案件一覧を左に寄せるスタイル */
+    display: flex;
+    flex-direction: column;
+}
+
+.job {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job h3 {
+    font-size: 18px;
+}
+
+.job p {
+    font-size: 14px;
+}
+
+.job-languages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.language {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.show-details {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.show-details:hover {
+    background-color: #005580;
+}
+
+.job-details-modal {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.modal-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  display: none; /* デフォルトで非表示にする */
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-languages {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
